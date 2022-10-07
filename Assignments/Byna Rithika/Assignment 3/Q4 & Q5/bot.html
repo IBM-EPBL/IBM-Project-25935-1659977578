@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "6f057b35-80d1-4b93-99f5-59a181e52d4e",
+            region: "jp-tok",
+            serviceInstanceID: "9f77b742-0f04-4ce3-a4fb-0473861a0757",
+            onLoad: function(instance) {
+                instance.render();
+            }
+        };
+        setTimeout(function() {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>
