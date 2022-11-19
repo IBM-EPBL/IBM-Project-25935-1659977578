@@ -23,7 +23,9 @@ This Personal Expense Tracker Application tracks the daily expenses of its users
 
 **Services Used:**
 - IBM DB2
+- Docker
 - IBM Container Registry
+- Kubernetes
 - SendGrid
 
 
