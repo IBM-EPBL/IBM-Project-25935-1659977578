@@ -30,3 +30,7 @@ This Personal Expense Tracker Application tracks the daily expenses of its users
 **Technical Architecture:**
 
 ![Architecture](https://user-images.githubusercontent.com/82449060/202844870-b7a89168-b399-4a4d-a44c-7f94bbd6e2df.png)
+
+
+## Cloud Deployment Link
+<a href="http://169.51.206.221:31174/" target="_blank">http://169.51.206.221:31174/</a>
