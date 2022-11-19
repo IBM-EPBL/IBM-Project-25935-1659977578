@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/AddExpense.css" />
+    <title>Expense Tracker - Register</title>
+
+
+    <style>
+        .margin {
+            margin-left: 150px;
+            margin-right: -300px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+        <div class="margin">
+            <h1>
+                PERSONAL EXPENSE TRACKER
+            </h1>
+
+            <img class="" style="width: 50%; margin-top: 30px;" src="{{url_for('static', filename='expenseTracker.png')}}" />
+        </div>
+        <div style="margin-top: 3%;">
+            <form action="{{ url_for('addrec') }}" class="form" method="POST">
+                <div class="title">Register</div>
+                <div class="input-container ic1">
+                    <input id="name" class="input" type="text" name="name" placeholder=" " />
+                    <div class="cut"></div>
+                    <label for="name" class="placeholder">Name</label>
+                </div>
+                <div class="input-container ic2">
+                    <input id="email" class="input" type="email" name="email" placeholder=" " />
+                    <div class="cut"></div>
+                    <label for="email" class="placeholder">Email</label>
+                </div>
+                <div class="input-container ic2">
+                    <input id="phone" class="input" type="text" name="phone" placeholder=" " />
+                    <div class="cut"></div>
+                    <label for="phone" class="placeholder">Phone</label>
+                </div>
+                <div class="input-container ic2">
+                    <input id="password" class="input" type="password" name="password" placeholder=" " />
+                    <div class="cut"></div>
+                    <label for="password" class="placeholder">Password</label>
+                </div>
+                <input type="submit" class="submit" value="Register">
+                <div class="login">
+                    <p>Already an user? <a href="/login">Login Here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
