@@ -38,8 +38,8 @@ app.secret_key='a'
 
 def send_mail(recipient_mail):
       
-  sg = sendgrid.SendGridAPIClient(api_key='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')
-  from_email = Email("anan19110.cs@rmkec.ac.in")  # Change to your verified sender
+  sg = sendgrid.SendGridAPIClient(api_key='')
+  from_email = Email("")  # Change to your verified sender
   to_email = To(recipient_mail)  # Change to your recipient
   subject = "EXPENSE TRACKER"
   content = Content("text/plain", "YOUR EXPENSE LMIT HAS EXCEED!!")
